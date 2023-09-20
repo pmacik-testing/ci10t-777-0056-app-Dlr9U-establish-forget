@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hnmd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0056-tenant/ci10t-777-0056-app/devfile-sample-hnmd@sha256:d802c0bfcd90a6f7ecfb7c8ffcec17155e246ed51e415094690c9062ba460c86
+        name: my-nodejs
+        resources: {}
+status: {}
